@@ -1,0 +1,28 @@
+{
+  "name": "retreads",
+  "version": "1.0.0",
+  "description": "proyecto de sitio web, durante el ciclo4 de mision tic 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Retreads/Retreads.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "mongodb"
+  ],
+  "author": "Iwinser Sanchez <iwinser.sanchez47@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Retreads/Retreads/issues"
+  },
+  "homepage": "https://github.com/Retreads/Retreads#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
