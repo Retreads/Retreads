@@ -1,8 +1,8 @@
 import React from 'react';
-
+import ReactDOM  from 'react-dom';
 const App = () => {
     return(
-        <p>hola</p>
+        <h1>hola mundo</h1>
     );
 }
 
