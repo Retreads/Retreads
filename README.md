@@ -1,5 +1,6 @@
 # EQUIPO RETREADS
-Desarrollando el proyecto de emprendimiento Ciclo 4 MisionTic2022
+Desarrollo del proyecto de emprendimiento Ciclo 4 MisionTic2022
+
 ![Alt text](LogoDraft.jpg) 
 
 ## INTEGRANTES
@@ -42,7 +43,8 @@ Herramientas para organizar, planear, estructurar y desarrollar la aplicación w
 
 
 ---
+
 hola, soy iwinser sanchez.
 Este es un commit de Jonathan llanos.
 Hola soy Aleja...ya estoy aquí!. 
-Hola aqui ajustando el README
+Hola soy Nestor,aqui ajustando el README.
