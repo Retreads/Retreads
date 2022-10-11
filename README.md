@@ -10,7 +10,7 @@ Desarrollo del proyecto de emprendimiento Ciclo 4 MisionTic2022
 4. Administrador de BD:
 5. Scrum master: Nestor Guillermo Jiménez Peña,CC.17417536     
 
-## DESCRIPCION DEL PROYECTO
+## DESCRIPCION DEL PROYECTO - CONTEXTO DEL NEGOCIO 
 - Proyecto por desarrollar:  WEB para un restaurante de comidas mixtas
 - Nombre del Proyecto: MIXTO'S
 - Arquitectura de la aplicación web:
@@ -41,8 +41,7 @@ Herramientas para organizar, planear, estructurar y desarrollar la aplicación w
 
 ## DIAGRAMA UML
 
-
----
+## COMMIT DE PRUEBAS
 
 hola, soy iwinser sanchez.
 Este es un commit de Jonathan llanos.
