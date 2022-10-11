@@ -42,8 +42,7 @@ Herramientas para organizar, planear, estructurar y desarrollar la aplicación w
 ## DIAGRAMA UML
 
 ## COMMIT DE PRUEBAS
-
-hola, soy iwinser sanchez.
-Este es un commit de Jonathan llanos.
-Hola soy Aleja...ya estoy aquí!. 
-Hola soy Nestor,aqui ajustando el README.
+- hola, soy iwinser sanchez.
+- Este es un commit de Jonathan llanos.
+- Hola soy Aleja...ya estoy aquí!. 
+- Hola soy Nestor,aqui ajustando el README.
