@@ -1,7 +1,7 @@
-/* /* const { plugins } = require('@babel/preset-env/lib/plugins-compat-data'); */
+/* /* */
 
 /* 
-
+const { plugins } = require('@babel/preset-env/lib/plugins-compat-data'); 
 const HtmlWebpackPlugin = require('Html-Webpack-Plugin');
 const path = require('path');
 
@@ -45,12 +45,13 @@ module.exports = {
     ]
 }  */
 
+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./src/index.js",
-  output: { path: path.resolve(__dirname, "dist"), filename: "bundle.js" },
+  output: { path: path.resolve(__dirname, 'dist'), filename: 'bundle.js',},
   mode: "development",
   resolve: { extensions: [".js", ".jsx"] },
   module: {
@@ -69,8 +70,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "./index.html",
+      template: './public/index.html',
+      filename: './index.html'
     }),
     new MiniCssExtractPlugin({ filename: "[name].css" }),
   ],
