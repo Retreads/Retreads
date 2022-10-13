@@ -1,7 +1,7 @@
 import {React} from "react";
 import ReactDOM from "react-dom";
-import Login from './containers/Login';
+import RecoveryPassword from './containers/RecoveryPassword';
 
 
-ReactDOM.render(<Login/>,document.getElementById('app'));
+ReactDOM.render(<RecoveryPassword/>,document.getElementById('app'));
 
