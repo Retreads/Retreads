@@ -17,7 +17,7 @@
     "node",
     "mongodb"
   ],
-  "author": "Iwinser Sanchez <iwinser.sanchez47@gmail.com>, Jonathan Manuel Llanos Ruiz<jomallaru@gmail.com>",
+  "author": "Iwinser Sanchez <iwinser.sanchez47@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Retreads/Retreads/issues"
