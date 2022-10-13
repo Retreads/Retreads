@@ -7,7 +7,7 @@ Desarrollo del proyecto de emprendimiento Ciclo 4 MisionTic2022
 1. Desarrollador: Iwinser Aljadys Sanchez <iwinser.sanchez47@gmail.com>
 2. Analista:
 3. Product owner: Jonathan Manuel Llanos ruiz
-4. Administrador de BD:
+4. Administrador de BD: William Felipe Naranjo Polania <wfnaranjo17@gmail.com>
 5. Scrum master: Nestor Guillermo Jiménez Peña,CC.17417536     
 
 ## DESCRIPCION DEL PROYECTO - CONTEXTO DEL NEGOCIO 
