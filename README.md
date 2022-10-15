@@ -4,7 +4,7 @@ Desarrollo del proyecto de emprendimiento Ciclo 4 MisionTic2022
 ![Alt text](LogoDraft.jpg) 
 
 ## INTEGRANTES
-1. Desarrollador: Iwinser Aljadys Sanchez <iwinser.sanchez47@gmail.com>
+1. Desarrollador: Iwinser Aljadys Sanchez <iwinser.sanchez47@gmail.com> CC 1122730507
 2. Analista:
 3. Product owner: Jonathan Manuel Llanos ruiz <jomallaru@gmail.com>, C.C 1117498826
 2. Analista:
