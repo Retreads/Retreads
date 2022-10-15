@@ -4,11 +4,11 @@ Desarrollo del proyecto de emprendimiento Ciclo 4 MisionTic2022
 ![Alt text](LogoDraft.jpg) 
 
 ## INTEGRANTES
-1. Desarrollador: Iwinser Aljadys Sanchez <iwinser.sanchez47@gmail.com> CC 1122730507
-2. Analista:Alejandra Aguilar Gómez aleja.vale12@gmail.com CC 52854936
-3. Product owner: Jonathan Manuel Llanos ruiz <jomallaru@gmail.com>, C.C 1117498826
+1. Desarrollador: Iwinser Aljadys Sanchez 
+2. Analista:Alejandra Aguilar Gómez 
+3. Product owner: Jonathan Manuel Llanos ruiz 
 4. Administrador de BD: William Felipe Naranjo Polania
-5. Scrum master: Nestor Guillermo Jiménez Peña, njimenez@ipconecta.com.co, CC.17417536     
+5. Scrum master: Nestor Guillermo Jiménez Peña   
 
 ## DESCRIPCION DEL PROYECTO - CONTEXTO DEL NEGOCIO 
 - Proyecto por desarrollar:  WEB para un restaurante de comidas Rapidas
