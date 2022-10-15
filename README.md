@@ -5,7 +5,7 @@ Desarrollo del proyecto de emprendimiento Ciclo 4 MisionTic2022
 
 ## INTEGRANTES
 1. Desarrollador: Iwinser Aljadys Sanchez <iwinser.sanchez47@gmail.com> CC 1122730507
-2. Analista:Alejandra Aguilar Gómez aleja.vale12@gmail.com
+2. Analista:Alejandra Aguilar Gómez aleja.vale12@gmail.com CC 52854936
 3. Product owner: Jonathan Manuel Llanos ruiz <jomallaru@gmail.com>, C.C 1117498826
 4. Administrador de BD: William Felipe Naranjo Polania <wfnaranjo17@gmail.com>
 5. Scrum master: Nestor Guillermo Jiménez Peña,CC.17417536     
