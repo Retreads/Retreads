@@ -8,16 +8,17 @@ const Login = () => {
             <div className="form-container">
                 <img src="" alt="" />
 
-                <h1 className="title">Create a new password</h1>
-                <p className="subtitle">Enter a new password for you account</p>
+                <h1 className="title">Administrador</h1>
+                <p className="subtitle">Bienvenido a la consola de administracion</p>
 
                 <form action="/" className="form">
 
-                    <label htmlFor="password" className="label">Password</label>
-                    <input type="password" id="password" placeholder="***********" hola="input input"/>
+                    <label htmlFor="password" className="label">Usuario</label>
+                    <input type="password" id="password" placeholder="Usuario" className="input input" /> 
+                    
 
                     <label htmlFor="new-password" className="label">Password</label>
-                    <input type="password" id="new-password" placeholder="***********" className="input input"/>
+                    <input type="password" id="new-password" placeholder="Escribe tu contraseña" className="input input"/>
                     
 
                     <input type="submit" value="Confirm" className="primary-button login-button" />

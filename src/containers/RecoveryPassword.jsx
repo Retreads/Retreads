@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/global.css'
 
+
 const RecoveryPassword = () => {
     return (
         <div className="login">
