@@ -21,7 +21,7 @@ const Login = () => {
                     <input type="password" id="new-password" placeholder="Escribe tu contraseña" className="input input"/>
                     
 
-                    <input type="submit" value="Confirm" className="primary-button login-button" />
+                    <input type="submit" value="Ingresar" className="primary-button login-button" />
                 </form>
             </div>
         </div>

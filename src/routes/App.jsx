@@ -1,13 +1,15 @@
 import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import '../styles/global.css';
 
 const App = () => 
     {
     return(
-        <div>
-        <h1>hola mundo soy iwinser desde React!</h1>
-        <p>cambiando</p>
-        </div>
+        <BrowserRouter>
+            <Switch>
+                
+            </Switch>
+        </BrowserRouter>
     );
 }
 
