@@ -13,7 +13,7 @@ const Login = () => {
                 <form action="/" className="form">
 
                     <label htmlFor="password" className="label">Usuario</label>
-                    <input type="password" id="password" placeholder="Usuario" className="input input" /> 
+                    <input type="text" id="password" placeholder="Usuario" className="input input" /> 
                     
 
                     <label htmlFor="new-password" className="label">Password</label>
