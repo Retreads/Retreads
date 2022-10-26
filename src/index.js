@@ -1,8 +1,8 @@
 import {React} from "react";
 import ReactDOM from "react-dom";
-import Login from './containers/Login';
+import App from "./routes/App";
 
 
 
-ReactDOM.render(<Login/>,document.getElementById('app'));
+ReactDOM.render(<App/>,document.getElementById('app'));
 

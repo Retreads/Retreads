@@ -2,7 +2,6 @@ import React from "react";
 import '../styles/global.css'
 
 const Login = () => {
-
     return (
         <div className="login">
             <div className="form-container">
