@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter , Switch,  Routes , Route } from "react-router-dom";
+import Footer from "../containers/Footer";
 import Layout from "../containers/Layout";
 import Login from "../containers/Login";
 import RecoveryPassword from "../containers/RecoveryPassword";
@@ -18,6 +19,7 @@ const App = () => {
               exact
               path="/recovery-password"
               component={RecoveryPassword}/>
+              <Route exact path="/footer" component={Footer} />
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout>

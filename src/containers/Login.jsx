@@ -1,11 +1,12 @@
 import React from "react";
 import '../styles/global.css'
 
+
 const Login = () => {
     return (
         <div className="login">
             <div className="form-container">
-                <img src="" alt="" />
+                {/* {<img src={logo} alt="" />} */}
 
                 <h1 className="title">Administrador</h1>
                 <p className="subtitle">Bienvenido a la consola de administracion</p>
