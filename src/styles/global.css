@@ -122,4 +122,15 @@
 }
 .inter-compras p {
   list-style:circle;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.inter-compras:hover {
+  background: #dd7003;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  cursor:pointer ;
 }

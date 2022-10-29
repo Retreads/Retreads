@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/global.css'
+import '../styles/global.css';
+import ButtonComprar from "../components/ButtonComprar";
 
 
 const Login = () => {
@@ -23,6 +24,10 @@ const Login = () => {
 
                     <input type="submit" value="Ingresar" className="primary-button login-button" />
                 </form>
+                <div>
+                    <ButtonComprar/>
+                    
+                </div>
             </div>
         </div>
     );

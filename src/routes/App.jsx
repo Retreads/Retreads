@@ -7,6 +7,7 @@ import RecoveryPassword from "../containers/RecoveryPassword";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import ButtonComprar from "../components/ButtonComprar";
+import AddProduct from "../components/AddProduct";
 import "../styles/global.css";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
               component={RecoveryPassword}/>
               <Route exact path="/footer" component={Footer} />
               <Route exact path="/button" component={ButtonComprar} />
+              <Route exact path="/add-product" component={AddProduct}/>
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 
