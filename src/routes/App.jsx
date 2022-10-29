@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import ButtonComprar from "../components/ButtonComprar";
 import AddProduct from "../components/AddProduct";
+import Nav from "../containers/Nav";
 import "../styles/global.css";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
               <Route exact path="/footer" component={Footer} />
               <Route exact path="/button" component={ButtonComprar} />
               <Route exact path="/add-product" component={AddProduct}/>
+              <Route exact path="/nav" component={Nav}/>
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 
