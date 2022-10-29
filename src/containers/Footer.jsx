@@ -11,7 +11,7 @@ const Footer = () => {
                 <br />
                 Todos los derechos reservados / Restaurante de Comidas Mixtas
                 <br />
-                Calle 18A No.19-04 /Barrio Mancera Acacias - Meta
+                Calle 18A No.19-04 / Barrio Mancera Acacias - Meta
                 </p>
             </div>
         </div>

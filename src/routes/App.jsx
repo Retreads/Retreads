@@ -22,7 +22,7 @@ const App = () => {
               <Route exact path="/footer" component={Footer} />
             <Route path="*" component={NotFound} />
           </Switch>
-      </Layout>
+      </Layout> 
     </BrowserRouter>
   );
 };
