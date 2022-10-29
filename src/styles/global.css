@@ -100,3 +100,26 @@
     font-weight: 600;
   }
 
+
+
+  /* Buton Compras */
+.buttonCompras {
+  margin: auto;
+  width:180px;
+  margin-top: 100px;
+}
+.inter-compras {
+  border-radius: 15px;
+  border: 0;
+  margin: auto;
+  width:160px;
+  Height:45px;
+  background: #FF7F00;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  
+}
+.inter-compras p {
+  list-style:circle;
+}

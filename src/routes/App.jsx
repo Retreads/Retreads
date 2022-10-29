@@ -6,6 +6,7 @@ import Login from "../containers/Login";
 import RecoveryPassword from "../containers/RecoveryPassword";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
+import ButtonComprar from "../components/ButtonComprar";
 import "../styles/global.css";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
               path="/recovery-password"
               component={RecoveryPassword}/>
               <Route exact path="/footer" component={Footer} />
+              <Route exact path="/button" component={ButtonComprar} />
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 
