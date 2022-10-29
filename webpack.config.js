@@ -10,7 +10,16 @@ module.exports = {
     publicPath:'/'
   },
   mode: "development",
-  resolve: { extensions: [".js", ".jsx"] },
+  resolve: { extensions: [".js", ".jsx"],
+
+  alias: {
+    '@components' : path.resolve(__dirname, 'src/components/'),
+    '@containers' : path.resolve(__dirname, 'src/containers/'),
+    '@logos': path.resolve(__dirname, 'src/asset/'),
+    
+  }
+  
+},
   module: {
     rules: [
       {
@@ -23,6 +32,10 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|svg|jpg)$/,
+        type : 'asset',
+      }
     ],
   },
   plugins: [

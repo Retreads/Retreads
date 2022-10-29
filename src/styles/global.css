@@ -118,9 +118,11 @@
   color: var(--white);
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  align-content: center;
 }
 .inter-compras p {
+  margin: 10px;
   list-style:circle;
   font-weight: 600;
   text-transform: uppercase;
@@ -139,3 +141,22 @@
   color: var(--white);
   text-align: center;
 }
+.navbar {
+  height: 60px;
+  justify-items: center;
+}
+/* .navbar-collapse {
+  background: #000;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+} */
+/* #navbarCollapse {
+  background: #000;
+  display: flex;
+  height: 50px;
+  
+} */

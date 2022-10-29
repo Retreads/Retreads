@@ -1,72 +1,69 @@
 import React from "react";
-import '../styles/global.css';
-import Login from "./Login";
-import Footer from "./Footer"
-/* import {logo} from "../assets/logoicono.svg"; */
+import "../styles/global.css";
+import lcarrito from "../asset/logocarrito.png";
+import logo from "../asset/logoicono.png";
 
 const Nav = () => {
   return (
     <>
-    <div className="navbar navbar-expand-lg navbar-light bg-primarys" >
-      {/* <a href="">
-        <img src={logo} height="100" alt="No encontrada" />
-      </a> */}
-      
-      <h1 style={{ color: "white" }}>MIXTOS Restaurante</h1>
-      <button
-        type="button"
-        className="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+      <div className="navbar navbar-expand-lg  bg-primarys">
+        <a href="">
+          <img src={logo} height="60px" alt="No encontrada" />
+        </a>
 
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav ms-auto">
-              <h4>
-                <a
-                  className="nav-item nav-link"
-                  style={{ color: "white" }}
-                  href=""
-                >
-                  {" "}
-                  Menú{" "}
-                </a>
-              </h4>
-              <h4>
-                <a
-                  className="nav-item nav-link"
-                  style={{ color: "white" }}
-                  href=""
-                >
-                  {" "}
-                  Ubicación{" "}
-                </a>
-              </h4>
-              <h4>
-                <a
-                  className="nav-item nav-link"
-                  style={{ color: "white" }}
-                  href=""
-                >
-                  {" "}
-                  Horarios{" "}
-                </a>
-              </h4>
-              <button type="button" className="btn btn-warning">
-                <h6>INICIAR SESIÓN</h6>
-              </button>
+        <button
+          type="button"
+          className="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-              <a href="">
-                <i class="fa-solid fa-cart-shopping bg-primarys"></i>
+        <div className="collapse navbar-collapse " id="navbarCollapse">
+          <div className="navbar-nav ms-auto">
+            <h5>
+              <a
+                className="nav-item nav-link"
+                style={{ color: "white" }}
+                href=""
+              >
+                {" "}
+                Menú{" "}
               </a>
-            </div>
-
-            <div className="col-12 col-md-1 mt-2 mt-md-0 text-center"></div>
+            </h5>
+            <h5>
+              <a
+                className="nav-item nav-link"
+                style={{ color: "white" }}
+                href=""
+              >
+                {" "}
+                Ubicación{" "}
+              </a>
+            </h5>
+            <h5>
+              <a
+                className="nav-item nav-link "
+                style={{ color: "white" }}
+                href=""
+              >
+                {" "}
+                Horarios{" "}
+              </a>
+            </h5>
+            <button type="button" className="btn btn-warning">
+              <h6>INICIAR SESIÓN</h6>
+            </button>
           </div>
-          
-    </div>
+
+          <div className="col-12 col-md-1 mt-2 mt-md-0 text-center">
+            <a href="">
+              <img src={lcarrito} alt="" height="50px" />
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

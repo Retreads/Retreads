@@ -4,7 +4,7 @@ import '../styles/global.css';
 const ButtonComprar = () => {
     return (
         <div className='buttonCompras'>
-            <div className="inter-compras">
+            <div className="inter-compras ">
                 <p>
                 <i class="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp; Comprar 
                 </p>
