@@ -39,16 +39,7 @@ const AddProduct = () => {
             </div>
           </div>
         )
-        {/* <><Button style={{
-            fontSize: '60%',
-            position: 'relative',
-            top: '20vh',
-            marginLeft: '5px',
-            backgroundColor: 'red',
-            borderRadius: '8%',
-            color: 'white',
-          }} onClick={handleClick1}>+</Button><Button onClick={handleClick2}>-</Button></> */}
-    /* ); */
-}
+        
+      }
 
 export default AddProduct;
