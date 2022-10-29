@@ -134,3 +134,8 @@
   -o-transition: 1s;
   cursor:pointer ;
 }
+.bg-primarys {
+  background:#FF7F00;
+  color: var(--white);
+  text-align: center;
+}

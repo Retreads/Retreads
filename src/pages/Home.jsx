@@ -1,10 +1,15 @@
 import React from 'react';
+import Nav from '../containers/Nav';
+import Footer from '../containers/Footer';
+import Login from '../containers/Login';
 
 const Home = () => {
     return (
-        <div>
-            <h1>tienda ciclo4 ; hola señor Jonathan</h1>
-        </div>
+        <>
+            <Nav/>
+            <Login/>
+            <Footer/>
+        </>
     );
 }
 
