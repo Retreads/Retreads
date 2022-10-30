@@ -1,15 +1,19 @@
 import React from "react";
 import '../styles/global.css';
 import ButtonComprar from "../components/ButtonComprar";
+import Nav from "../containers/Nav";
+import Footer from "../containers/Footer";
 
 
 const Login = () => {
     return (
+        <>
+        <Nav/>
         <div className="login">
             <div className="form-container">
                 {/* {<img src={logo} alt="" />} */}
 
-                <h1 className="title">Administrador</h1>
+                <h1 className="title">Administrador <i class="fa-solid fa-user-tie"></i></h1>
                 <p className="subtitle">Bienvenido a la consola de administracion</p>
 
                 <form action="/" className="form">
@@ -26,7 +30,10 @@ const Login = () => {
                 </form>
               
             </div>
+            
         </div>
+        <Footer/>
+        </>
     );
 
 }

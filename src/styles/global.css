@@ -25,7 +25,7 @@
     width: 300px;
   }
   .title {
-    font-size: var(--lg);
+    font-size: 1.4em;
     margin-bottom: 12px;
     text-align: center;
   }
@@ -87,6 +87,7 @@
     background: #ff7f00;
     margin: auto;
     color: var(--white);
+    
   }
   .footer-container {
     display: flex;
@@ -200,4 +201,48 @@
 .card-title , .precioProducto{
   text-align: center;
   font-weight: 600;
+}
+
+
+
+.admin-edit {
+  height: 90vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.logo-edit {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  text-align: center;
+  justify-content: space-evenly;
+  border-radius:40px;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592A08;
+  -webkit-border-radius:40px;
+  -moz-border-radius:40px;
+  -ms-border-radius:40px;
+  -o-border-radius:40px;
+}
+.logo-edit i {
+  font-size: 2em;
+}
+.per-btn {
+  background: #FF7F00;
+  color:white;
+  font-size: 1.2em;
+}
+.per-btn:hover {
+  background:  #ff8000a9;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }

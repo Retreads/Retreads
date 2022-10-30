@@ -7,9 +7,7 @@ const Nav = () => {
   return (
     <>
       <div className="navbar navbar-expand-lg  bg-primarys ">
-        
-          <img src={logo} height="60px" alt="No encontrada" />
-        
+        <img src={logo} height="60px" alt="No encontrada" />
 
         <button
           type="button"
@@ -23,44 +21,33 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto">
             <h5>
-              <a
-                className="nav-item nav-link"
-              
-                href=""
-              >
+              <a className="nav-item nav-link" href="">
                 {" "}
                 Menú{" "}
               </a>
             </h5>
             <h5>
-              <a
-                className="nav-item nav-link"
-              
-                href=""
-              >
+              <a className="nav-item nav-link" href="">
                 {" "}
                 Ubicación{" "}
               </a>
             </h5>
             <h5>
-              <a
-                className="nav-item nav-link "
-                
-                href=""
-              >
+              <a className="nav-item nav-link " href="">
                 {" "}
                 Horarios{" "}
               </a>
             </h5>
-            
           </div>
         </div>
         <div className="navbar-nav ms-auto " id="navbarCollapse">
           <div className="navbar-nav">
             <button
-          
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse" type="button" className="btn btn-warning">
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              type="button"
+              className="btn btn-warning "
+            >
               <h7>INICIAR SESIÓN</h7>
             </button>
           </div>

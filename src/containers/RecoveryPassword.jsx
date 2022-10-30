@@ -5,9 +5,7 @@ import ButtonComprar from "../components/ButtonComprar";
 const RecoveryPassword = () => {
   return (
     <div className="login">
-      <div>
-        <ButtonComprar />
-      </div>
+      
       <div className="form-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
