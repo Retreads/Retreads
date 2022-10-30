@@ -163,7 +163,7 @@
   -o-transition: 0.5s;
 }
 .card {
-  width: 200px;
+  width: 25%;
   height: 300px;
   margin: auto;
   border:solid 1px;

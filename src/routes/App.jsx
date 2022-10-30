@@ -11,6 +11,7 @@ import AddProduct from "../components/AddProduct";
 import Nav from "../containers/Nav";
 import ItemProduct from "../components/ItemProduct";
 import "../styles/global.css";
+import SeccionCalentado from "../containers/SeccionCalentado";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
               <Route exact path="/add-product" component={AddProduct}/>
               <Route exact path="/nav" component={Nav}/>
               <Route exact path="/itemproducto" component={ItemProduct}/>
+              <Route exact path="/calentao" component={SeccionCalentado}/>
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 
