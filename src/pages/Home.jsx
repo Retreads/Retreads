@@ -6,6 +6,8 @@ import ItemProduct from '../components/ItemProduct';
 import SeccionCalentado from '../containers/SeccionCalentado';
 import SeccionHamBgs from '../containers/SeccionHamBgs';
 import SeccionPatacon from '../containers/SeccionPatacon';
+import SeccionMenu from '../containers/SeccionMenu';
+import SeccionBebidas from '../containers/SeccionBebidas';
 
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
             <SeccionCalentado/>
             <SeccionHamBgs/>
             <SeccionPatacon/>
+            <SeccionMenu/>
+            <SeccionBebidas/>
             <Footer/>
         </>
     );
