@@ -1,23 +1,23 @@
 import React from 'react';
-import ItemProduct from '../components/ItemProduct';
 import '../styles/Container.css'
-
-const SeccionCalentado = () => {
+import ItemProduct from '../components/ItemProduct';
+const SeccionHamBgs = () => {
     return (
-        <div className='cont-calentado'>
+        
+        <div className='cont-calentado cont-hamburger'> 
             <div>
-                <h4>Calentao's</h4>
+                <h4>Hamburguesas</h4>
             </div>
             <div className='item-calentado'>
                 <ItemProduct/>
                 <ItemProduct/>
                 <ItemProduct/>
                 <ItemProduct/>
-                <ItemProduct/>
+                
             </div>
-
         </div>
+       
     );
 }
 
-export default SeccionCalentado;
+export default SeccionHamBgs;

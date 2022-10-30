@@ -10,6 +10,7 @@ import ButtonComprar from "../components/ButtonComprar";
 import AddProduct from "../components/AddProduct";
 import Nav from "../containers/Nav";
 import ItemProduct from "../components/ItemProduct";
+import SeccionHamBgs from "../containers/SeccionHamBgs";
 import "../styles/global.css";
 import SeccionCalentado from "../containers/SeccionCalentado";
 
@@ -30,6 +31,7 @@ const App = () => {
               <Route exact path="/nav" component={Nav}/>
               <Route exact path="/itemproducto" component={ItemProduct}/>
               <Route exact path="/calentao" component={SeccionCalentado}/>
+              <Route exact path="/hamburguesa" component={SeccionHamBgs} />
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 
