@@ -9,6 +9,7 @@ import NotFound from "../pages/NotFound";
 import ButtonComprar from "../components/ButtonComprar";
 import AddProduct from "../components/AddProduct";
 import Nav from "../containers/Nav";
+import ItemProduct from "../components/ItemProduct";
 import "../styles/global.css";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
               <Route exact path="/button" component={ButtonComprar} />
               <Route exact path="/add-product" component={AddProduct}/>
               <Route exact path="/nav" component={Nav}/>
+              <Route exact path="/itemproducto" component={ItemProduct}/>
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 

@@ -24,10 +24,7 @@ const Login = () => {
 
                     <input type="submit" value="Ingresar" className="primary-button login-button" />
                 </form>
-                <div>
-                    <ButtonComprar/>
-                    
-                </div>
+              
             </div>
         </div>
     );
