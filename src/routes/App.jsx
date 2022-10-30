@@ -13,6 +13,8 @@ import ItemProduct from "../components/ItemProduct";
 import SeccionHamBgs from "../containers/SeccionHamBgs";
 import "../styles/global.css";
 import SeccionCalentado from "../containers/SeccionCalentado";
+import TitleMenu from "../components/TitleMenu";
+import Header from "../containers/Header";
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
               <Route exact path="/itemproducto" component={ItemProduct}/>
               <Route exact path="/calentao" component={SeccionCalentado}/>
               <Route exact path="/hamburguesa" component={SeccionHamBgs} />
+              <Route exact path="/menu" component={TitleMenu} />
+              <Route exact path="/header" component={Header} />
             <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 

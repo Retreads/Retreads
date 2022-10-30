@@ -24,3 +24,33 @@
     border:3px solid  #571A0D;
     border-radius:22px;
 }
+
+
+.header {
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.img-header {
+    position: relative;
+    height: 80%;
+    width: 40%;
+}
+
+.cont-header {
+    width: 60%;
+    padding: 2em 4em;
+}
+.header h5 {
+    font-weight: 700;
+    color: #571A0D;
+    margin: 16px 0px;
+    font-size: 1.6em;
+}
+.header p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}

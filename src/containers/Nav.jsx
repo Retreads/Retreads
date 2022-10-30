@@ -7,9 +7,9 @@ const Nav = () => {
   return (
     <>
       <div className="navbar navbar-expand-lg  bg-primarys ">
-        <a href="">
+        
           <img src={logo} height="60px" alt="No encontrada" />
-        </a>
+        
 
         <button
           type="button"
