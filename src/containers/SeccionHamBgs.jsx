@@ -10,10 +10,7 @@ const SeccionHamBgs = () => {
             </div>
             <div className='item-calentado'>
                 <ItemProduct/>
-                <ItemProduct/>
-                <ItemProduct/>
-                <ItemProduct/>
-                
+                <ItemProduct/>               
             </div>
         </div>
        

@@ -17,6 +17,7 @@ const SeccionMenu = () => {
                 <ItemProduct/>
                 <ItemProduct/>
                 <ItemProduct/>
+                <ItemProduct/>
                 
             </div>
         </div>

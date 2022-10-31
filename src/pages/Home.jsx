@@ -15,6 +15,7 @@ const Home = () => {
         <>
             <Nav/>
             <Header/>
+            {/* <Banner/> */}
             <TitleMenu/>
             <SeccionCalentado/>
             <SeccionHamBgs/>

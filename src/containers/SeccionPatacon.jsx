@@ -11,6 +11,7 @@ const SeccionPatacon = () => {
             <div className='item-calentado'>
                 <ItemProduct/>
                 <ItemProduct/>
+                <ItemProduct/>
             </div>
         </div>
     );

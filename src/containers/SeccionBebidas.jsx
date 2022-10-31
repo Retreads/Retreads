@@ -14,6 +14,7 @@ const SeccionBebidas = () => {
                 <ItemProduct/>
                 <ItemProduct/>
                 <ItemProduct/>
+                <ItemProduct/>
                 
             </div>
         </div>
