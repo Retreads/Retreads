@@ -2,13 +2,13 @@ import React from "react";
 
 import "../styles/global.css";
 import ButtonComprar from "./ButtonComprar";
-import logo from "../asset/logoicono.png";
+import foto3 from "../asset/3CalentaoPaisa.jpg";
 
 export const Item3CalentaoPaisa = () => {
   return (
     <>
       <div className="card" /* style="width: 18rem" */>
-        <img className="card-img-top" src={logo} alt="Card image cap" />
+        <img className="rounded-square card-img-top" width="200" height="200" src={foto3} alt="..." />  
         <div className="card-body">
           <h5 className="card-title">CALENTAO PAISA</h5>
           <p className="card-text">
@@ -22,4 +22,4 @@ export const Item3CalentaoPaisa = () => {
   );
 };
 
-export default Item1CalentaoValluno;
+export default Item3CalentaoPaisa;
