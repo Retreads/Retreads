@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <>
             <Nav/>
-            <Header/>
+            {/* <Header/> */}
             <Banner/>
             <TitleMenu/>
             <SeccionCalentado/>
