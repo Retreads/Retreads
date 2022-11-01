@@ -7,7 +7,7 @@ import SeccionPatacon from '../containers/SeccionPatacon';
 import SeccionMenu from '../containers/SeccionMenu';
 import SeccionBebidas from '../containers/SeccionBebidas';
 import TitleMenu from '../components/TitleMenu';
-import Header from '../containers/Header';
+// import Header from '../containers/Header';
 import Banner from '../components/Banner';
 
 
