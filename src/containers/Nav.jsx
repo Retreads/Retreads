@@ -21,9 +21,8 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto">
             <h5>
-              <a className="nav-item nav-link" href="">
-                {" "}
-                Menú{" "}
+              <a className="nav-item nav-link" href="#menu-ir">
+                Menu
               </a>
             </h5>
             <h5>

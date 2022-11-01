@@ -4,7 +4,7 @@ import '../styles/Componentes.css'
 
 const TitleMenu = () => {
     return (
-        <div className='title-menu'>
+        <div className='title-menu' id='menu-ir'>
             <h2>Menu</h2>
             
         </div>        
