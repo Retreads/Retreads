@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../styles/global.css";
 import ButtonComprar from './ButtonComprar';
-import foto6 from "../6HamburguesaWrap.jpg"
+import foto6 from "../asset/6HamburguesaWrap.jpg"
 
 export const Item6HamburguesaWrap = () => {
     return (
