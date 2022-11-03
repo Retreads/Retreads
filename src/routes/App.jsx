@@ -11,7 +11,7 @@ import Horarios from "../pages/Horarios";
 import Administracion from "../pages/Administracion";
 import AdministracionVR from "../pages/AdministracionVR";
 import AdministracionAA from "../pages/AdministracionAA";
-import BtnRecoger from "../components/BtnRecoger";
+import Carrito from "../containers/Carrito";
 
 import "../styles/global.css";
 
@@ -29,7 +29,7 @@ const App = () => {
           <Route exact path="/administracion" component={Administracion} />
           <Route exact path="/administracion1" component={AdministracionAA} />
           <Route exact path="/administracion2" component={AdministracionVR} />
-          <Route exact path="/recoger" component={BtnRecoger}/>
+          <Route exact path="/carrito" component={Carrito} />
           <Route path="*" component={NotFound} />
 
           
