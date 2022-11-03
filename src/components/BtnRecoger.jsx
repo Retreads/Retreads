@@ -1,12 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/Componentes.css'
 
 const BtnRecoger = () => {
     return (
         <div className="cont-recoger-tienda">
-            <div className="inter-compras ">
-                <p>
-                <i className="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp; Comprar 
-                </p>
+            <div >
+                <NavLink className="inter-recoger" to="/">Recoger en tienda</NavLink>
             </div>
         </div>
     );
