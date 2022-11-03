@@ -1,5 +1,4 @@
 
-.history
+#lineas para ignorar el packages modules y el history
 /node_modules
-node_modules
-./history
+.history

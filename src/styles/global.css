@@ -1,0 +1,253 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #b1b1b1;
+    --text-input-field: #F7F7F7;
+    --hospital-green:#FB9318;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+  }
+  .title {
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+  .primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+  }
+  .login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+
+
+
+  /* footer */
+  /* FFFFFFFF */
+  /* OOOOOOOO */
+  /* OOOOOOOO */
+  /* TTTTTTTT */
+  /* EEEEEEEE */
+  /* RRRRRRRRRR */
+
+
+  .footer {
+    width: 100%;
+    background: #ff7f00;
+    margin: auto;
+    color: var(--white);
+    
+  }
+  .footer-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-content: center;
+  }
+  .footer-container p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+
+
+  /* Buton Compras */
+.buttonCompras {
+  margin: auto;
+  margin-bottom: 10px;
+}
+.inter-compras {
+  border-radius: 15px;
+  border: 0;
+  margin: auto;
+  width:160px;
+  Height:45px;
+  background: #FF7F00;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inter-compras p {
+  margin: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.inter-compras:hover {
+  background: #dd7003;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  cursor:pointer ;
+}
+.bg-primarys {
+  background:#FF7F00;
+  color: var(--white);
+  text-align: center;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  
+}
+.navbar{
+  padding:0px 3em;
+}
+.navbar-collapse a {
+  color:white;
+}
+.navbar-collapse a:hover {
+  color:black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.navbar-nav button:hover {
+  background:rgb(245, 185, 145);
+  border:solid 1px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.card {
+  width: 25%;
+  height: 100%;
+  margin: auto;
+  /* border:solid 1px; */
+  margin: 10px 20px;
+}
+.card-img-top {
+  width: auto;
+  margin: auto;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0.4em 1em;
+  margin: auto;
+  /* border:solid 1px; */
+}
+.lista-card {
+  /* height: 30px; */
+  /* border:solid 1px; */
+  list-style: none;
+  padding-top: 3em;
+}
+.card a {
+  background: #000;
+}
+.card-title , .precioProducto{
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+.admin-edit {
+  height: 90vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.logo-edit {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  text-align: center;
+  justify-content: space-evenly;
+  border-radius:40px;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592A08;
+  -webkit-border-radius:40px;
+  -moz-border-radius:40px;
+  -ms-border-radius:40px;
+  -o-border-radius:40px;
+}
+.logo-edit i {
+  font-size: 2em;
+}
+.per-btn {
+  background: #FF7F00;
+  color:white;
+  font-size: 1.2em;
+}
+.per-btn:hover {
+  background:  #ff8000a9;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+
+.quitar-linea-inf {
+  text-decoration: none;
+}
