@@ -18,6 +18,8 @@ import TitleMenu from "../components/TitleMenu";
 import Header from "../containers/Header";
 import Admin1 from "../pages/Admin1";
 import Banner from "../components/Banner";
+import Ubicacion from "../pages/Ubicacion";
+import Horarios from "../pages/Horarios";
 
 const App = () => {
   return (
@@ -42,6 +44,10 @@ const App = () => {
               <Route exact path="/header" component={Header} />
               <Route exact path="/admin" component={Admin1}/>
               <Route exact path="/banner" component={Banner}/>
+
+              <Route exact path="/ubicacion" component={Ubicacion}/>
+              <Route exact path="/horarios" component={Horarios}/>
+
               <Route path="*" component={NotFound} />
           </Switch>
       </Layout> 

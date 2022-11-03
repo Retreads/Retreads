@@ -13,7 +13,7 @@ const Login = () => {
             <div className="form-container">
                 {/* {<img src={logo} alt="" />} */}
 
-                <h1 className="title">Administrador <i class="fa-solid fa-user-tie"></i></h1>
+                <h1 className="title">Administrador <i className="fa-solid fa-user-tie"></i></h1>
                 <p className="subtitle">Bienvenido a la consola de administracion</p>
 
                 <form action="/" className="form">

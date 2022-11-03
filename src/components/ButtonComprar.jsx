@@ -6,7 +6,7 @@ const ButtonComprar = () => {
         <div className='buttonCompras'>
             <div className="inter-compras ">
                 <p>
-                <i class="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp; Comprar 
+                <i className="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp; Comprar 
                 </p>
             </div>
         </div>
