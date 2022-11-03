@@ -16,7 +16,7 @@ const Login = () => {
                 <h1 className="title">Administrador <i className="fa-solid fa-user-tie"></i></h1>
                 <p className="subtitle">Bienvenido a la consola de administracion</p>
 
-                <form action="/" className="form">
+                <form action="/administracion" className="form">
 
                     <label htmlFor="password" className="label">Usuario</label>
                     <input type="text" id="password" placeholder="Usuario" className="input input" /> 

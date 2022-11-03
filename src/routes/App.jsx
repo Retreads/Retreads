@@ -21,6 +21,10 @@ import Banner from "../components/Banner";
 import Ubicacion from "../pages/Ubicacion";
 import Horarios from "../pages/Horarios";
 
+import Administracion from "../pages/Administracion";
+import AdministracionVR from "../pages/AdministracionVR";
+import AdministracionAA from "../pages/AdministracionAA";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -47,6 +51,10 @@ const App = () => {
 
               <Route exact path="/ubicacion" component={Ubicacion}/>
               <Route exact path="/horarios" component={Horarios}/>
+
+              <Route exact path="/administracion" component={Administracion}/>
+              <Route exact path="/administracion1" component={AdministracionAA}/>
+              <Route exact path="/administracion2" component={AdministracionVR}/>
 
               <Route path="*" component={NotFound} />
           </Switch>
