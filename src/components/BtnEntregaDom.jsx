@@ -7,7 +7,7 @@ const BtnEntregaDom = () => {
     return (
         <div className="cont-domicilio">
             <div >
-                <NavLink className="inter-recoger" to="/">Entrega a Domicilio</NavLink>
+                <NavLink className="inter-recoger" to="/entregadomicilio">Entrega a Domicilio</NavLink>
             </div>
         </div>
     );

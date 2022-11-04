@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Container.css";
+import { NavLink } from "react-router-dom";
 
 import BtnRecoger from "../components/BtnRecoger";
 import BtnEntregaDom from "../components/BtnEntregaDom";
@@ -65,9 +66,11 @@ const Carrito = () => {
           <div className="recoger">
             <BtnFinCompra />
           </div>
-          <div className="recoger">
-            <BtnContinue />
-          </div>
+          <div>
+          <NavLink className="inter-recoger" to="/">
+            Seguir Comprando
+          </NavLink>
+        </div>
         </div>
       </div>
     </>

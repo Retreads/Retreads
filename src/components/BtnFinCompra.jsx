@@ -7,7 +7,7 @@ const BtnFinCompra = () => {
     return (
         <div className="cont-domicilio">
             <div >
-                <NavLink className="inter-recoger" to="/">Finalizar compra</NavLink>
+                <NavLink className="inter-recoger" to="#">Finalizar compra</NavLink>
             </div>
         </div>
     );
