@@ -23,21 +23,25 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto">
             <h5>
-              <a className="nav-item nav-link" href="#menu-ir">
-                <NavLink to="/" className="quitar-linea-inf">
-                  Menu
-                </NavLink>
-              </a>
+              <NavLink to="/" className="quitar-linea-inf nav-item nav-link">
+                <a href="" className="quitar-linea-inf">Menu</a> 
+              </NavLink>
             </h5>
-            
+
             <h5>
-              <NavLink to="/ubicacion" className="quitar-linea-inf nav-item nav-link">
-              Ubicación
+              <NavLink
+                to="/ubicacion"
+                className="quitar-linea-inf nav-item nav-link"
+              >
+                Ubicación
               </NavLink>
             </h5>
             <h5>
-              <NavLink to="/horarios" className="quitar-linea-inf nav-item nav-link">
-              Horarios
+              <NavLink
+                to="/horarios"
+                className="quitar-linea-inf nav-item nav-link"
+              >
+                Horarios
               </NavLink>
             </h5>
           </div>

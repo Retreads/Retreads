@@ -133,3 +133,9 @@
     width: auto;
     height: auto;
 }
+.margin-auto {
+  width: 60%;
+  margin: auto;
+  /* border:solid 1px; */
+  padding: 3em 1em;
+}

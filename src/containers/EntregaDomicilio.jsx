@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/Container.css';
 import BtnContinue from "../components/BtnContinue";
 import { NavLink } from "react-router-dom";
 
@@ -12,8 +13,8 @@ const EntregaDomicilio = () => {
         <div className="btn-cont alg1"></div>
       </div>
       <form>
-        <div class="form-row ">
-          <div class="form-group col-md-6 ">
+        <div class="form-row margin-auto">
+          <div class="form-group ">
             <label for="inputEmail4">Barrio</label>
             <input
               type="text"
@@ -22,7 +23,7 @@ const EntregaDomicilio = () => {
               placeholder="escribe el nombre de tu barrio"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group ">
             <label for="inputPassword4">Direccion</label>
             <input
               type="text"
@@ -31,7 +32,7 @@ const EntregaDomicilio = () => {
               placeholder="Ej :  calle 8 # 13a-17"
             />
           </div>
-        </div>
+        
         <div class="form-group">
           <label for="inputInmueble">Tipo de inmueble</label>
           <input
@@ -41,7 +42,7 @@ const EntregaDomicilio = () => {
             placeholder="casa-apartamento-oficinas"
           />
         </div>
-        <div class="form-group">
+        <div class="form-group ">
           <label for="inputAddress2">Bloque o Interior</label>
           <input
             type="text"
@@ -51,11 +52,11 @@ const EntregaDomicilio = () => {
           />
         </div>
         
-        <div class="form-group">
+        <div class="form-group ">
     <label for="exampleFormControlTextarea1">Observaciones</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
-        
+  </div>
       </form>
 
       <div className="btn-cont alg2">
