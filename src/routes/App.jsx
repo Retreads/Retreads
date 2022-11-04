@@ -12,6 +12,7 @@ import Administracion from "../pages/Administracion";
 import AdministracionVR from "../pages/AdministracionVR";
 import AdministracionAA from "../pages/AdministracionAA";
 import Carrito from "../containers/Carrito";
+import RecogeInTienda from "../containers/RecogeInTienda";
 
 import "../styles/global.css";
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route exact path="/administracion1" component={AdministracionAA} />
           <Route exact path="/administracion2" component={AdministracionVR} />
           <Route exact path="/carrito" component={Carrito} />
+          <Route exact path="/recoge-en-tienda" component={RecogeInTienda} />
           <Route path="*" component={NotFound} />
 
           

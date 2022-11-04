@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Container.css";
+
 import BtnRecoger from "../components/BtnRecoger";
 import BtnEntregaDom from "../components/BtnEntregaDom";
 import BtnFinCompra from "../components/BtnFinCompra";

@@ -6,7 +6,7 @@ const BtnRecoger = () => {
     return (
         <div className="cont-recoger-tienda">
             <div >
-                <NavLink className="inter-recoger" to="/">Recoger en tienda</NavLink>
+                <NavLink className="inter-recoger" to="/recoge-en-tienda">Recoger en tienda</NavLink>
             </div>
         </div>
     );

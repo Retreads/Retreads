@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/global.css";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 import lcarrito from "../asset/logocarrito.png";
 import logo from "../asset/logoicono.png";
@@ -29,18 +29,15 @@ const Nav = () => {
                 </NavLink>
               </a>
             </h5>
+            
             <h5>
-              <a className="nav-item nav-link" href="">
-                <NavLink to="/ubicacion" className="quitar-linea-inf">
-                  Ubicación
-                </NavLink>
-              </a>
+              <NavLink to="/ubicacion" className="quitar-linea-inf nav-item nav-link">
+              Ubicación
+              </NavLink>
             </h5>
             <h5>
-              <NavLink to="/horarios" className="quitar-linea-inf">
-                <a className="nav-item nav-link " href="">
-                  Horarios
-                </a>
+              <NavLink to="/horarios" className="quitar-linea-inf nav-item nav-link">
+              Horarios
               </NavLink>
             </h5>
           </div>
@@ -59,9 +56,9 @@ const Nav = () => {
             </NavLink>
           </div>
           <div className="col-12 col-md-2 mt-2 mt-md-0 text-center">
-            <a href="">
+            <NavLink to="/carrito">
               <img src={lcarrito} alt="" height="50px" />
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
