@@ -3,10 +3,16 @@ import axios from "axios";
 
 const useGetProducts = (API)=> {
     const [products, setProducts] = useState([]);
-    useEffect(async ()=> {
-        const response = await axios(API);
-        setProducts(response.data);
-    },[]);
+    const [isLoading, setIsLoading] = useState(true);
+
+      useEffect(() => {
+    fetch(API)
+      .then((res) => res.json())
+      .then((response) => {
+        setProducts(response);
+        setIsLoading(false);
+      });
+  }, []);
 
     return products;
 };

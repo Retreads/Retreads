@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/global.css";
-/* import ButtonComprar from './ButtonComprar'; */
+import ButtonComprar from './ButtonComprar';
 
 const ItemProduct = ({ product }) => {
   const [cart, setCart] = useState([]);
@@ -21,7 +21,10 @@ const ItemProduct = ({ product }) => {
         <h5 className="card-title"><p>{product.title}</p></h5>
             <p>${product.price}</p>
             <p>{product.description}</p>
-          
+            <div onClick={handleClick} >
+            < ButtonComprar/>
+            </div>
+            
         </div>
       </div>
     </div>
