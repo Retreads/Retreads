@@ -18,10 +18,10 @@ const Home = () => {
             {/* <Header/> */}
             <Banner/>
             <TitleMenu/>
-            <SeccionCalentado/>
+            {/* <SeccionCalentado/>
             <SeccionHamBgs/>
             <SeccionPatacon/>
-            <SeccionMenu/>
+            <SeccionMenu/> */}
             <SeccionBebidas/>
             <Footer/>
         </>

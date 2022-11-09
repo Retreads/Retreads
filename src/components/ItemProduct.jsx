@@ -1,24 +1,31 @@
-import React from 'react';
-import '../styles/global.css';
-import ButtonComprar from './ButtonComprar';
-import logo from "../asset/logoicono.png";
-import AddProduct from './AddProduct';
+import React, { useState } from "react";
+import "../styles/global.css";
+/* import ButtonComprar from './ButtonComprar'; */
 
-const ItemProduct = () => {
-    return (
-        <>
-        <div className="card" /* style="width: 18rem" */>
-            <img className="card-img-top" src={logo}  alt="Card image cap" />
-            <div className="card-body">
-                <h5 className="card-title">Producto 1</h5>
-                <p className="card-text">Esta es la descripcion del producto menos su valor o precio</p>
-                <h6 className='precioProducto'>Precio: &nbsp; &nbsp;	&#36; 8.000</h6>
-                <ButtonComprar/>
-                
-            </div>
+const ItemProduct = ({ product }) => {
+  const [cart, setCart] = useState([]);
+
+  const handleClick = () => {
+    setCart([]);
+  };
+
+  return (
+    <div className="card">
+      <img
+        className="card-img-top"
+        src={product.images[0]}
+        alt={product.title}
+      />
+      <div className="card-body">
+        <div className="product-info">
+        <h5 className="card-title"><p>{product.title}</p></h5>
+            <p>${product.price}</p>
+            <p>{product.description}</p>
+          
         </div>
-        </>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default ItemProduct;
