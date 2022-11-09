@@ -1,0 +1,30 @@
+{
+  "name": "retreads",
+  "version": "1.0.0",
+  "description": "Mixtos restaurante de comida rápida",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon back/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Retreads/Retreads.git"
+  },
+  "author": "Retreads ciclo 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Retreads/Retreads/issues"
+  },
+  "homepage": "https://github.com/Retreads/Retreads#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.7",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
