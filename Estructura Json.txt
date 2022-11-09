@@ -1,0 +1,17 @@
+{
+   "nombre" : "Hamburguesa Wrap",
+   "precio" : "10000",
+   "descripcion" : "Wrap con carnes de 125g 100% de res a la parrilla con salsa MIXTOS, una tajada de queso, lechuga picada, tomate, cebolla grile, papa ripio",
+   "calificacion" : 4.0,
+   "imagen" : [
+       {
+           "public_id" : "productos/dsvbpny402gelwugv2le",
+           "url" : "./images/platos/hamburguesa_wrap.jpg"
+        }
+    ],
+   "categoria" : "Hamburguesas",
+   "vendedor" : "Iwinser Sanchez",
+   "inventario" : 40,
+   "numCalificaciones" : 25,
+   "opiniones": []
+}
