@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
-const useGetProducts = (API)=> {
-    const [products, setProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
 
-      useEffect(() => {
+const useGetProducts = (API) => {
+  const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
     fetch(API)
       .then((res) => res.json())
       .then((response) => {
@@ -14,6 +14,6 @@ const useGetProducts = (API)=> {
       });
   }, []);
 
-    return products;
+  return  products;
 };
- export default useGetProducts;
+export default useGetProducts;
