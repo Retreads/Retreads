@@ -1,0 +1,40 @@
+.title-menu h2 {
+  font-weight: 800;
+  color: #ff7f00;
+  margin: 4px 12px;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2.5em;
+}
+.inter-recoger {
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 0;
+  color: white;
+  margin: auto;
+  width: 160px;
+  height: 45px;
+  background: #571a0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+/* .nav-btn {
+    text-decoration: none;
+} */
+
+.inter-recoger:hover {
+    background:  #d66b07;
+    transition: 1s;
+    color:black;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    cursor:pointer ;
+  }
