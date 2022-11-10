@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState }from "react";
 import "../styles/global.css";
 import { NavLink } from "react-router-dom";
 
@@ -6,6 +6,7 @@ import lcarrito from "../asset/logocarrito.png";
 import logo from "../asset/logoicono.png";
 
 const Nav = () => {
+  
   return (
     <>
       <div className="navbar navbar-expand-lg  bg-primarys ">

@@ -20,7 +20,7 @@ const ItemProduct = ({ product }) => {
         <div className="product-info">
         <h5 className="card-title"><p>{product.title}</p></h5>
             <p>${product.price}</p>
-            <p>{product.description}</p>
+            <p className="datos-descripcion" >{product.description}</p>
             <div onClick={handleClick} >
             < ButtonComprar/>
             </div>
