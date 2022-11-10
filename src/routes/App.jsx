@@ -14,11 +14,15 @@ import AdministracionAA from "../pages/AdministracionAA";
 import Carrito from "../containers/Carrito";
 import RecogeInTienda from "../containers/RecogeInTienda";
 import EntregaDomicilio from "../containers/EntregaDomicilio";
+import AppContext from "../context/AppContext.js"
+import useInitialState from "../hooks/useInitialState"
 
 import "../styles/global.css";
 
 const App = () => {
+  const initialState = useInitialState();
   return (
+    <AppContext.Provider value={initialState}>
     <BrowserRouter>
       <Layout>
         <Switch>
@@ -40,6 +44,7 @@ const App = () => {
         </Switch>
       </Layout>
     </BrowserRouter>
+    </AppContext.Provider>
   );
 };
 

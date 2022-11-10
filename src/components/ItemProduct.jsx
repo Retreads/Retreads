@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "../styles/global.css";
+import AppContext from "../context/AppContext";
 import ButtonComprar from './ButtonComprar';
 
 const ItemProduct = ({ product }) => {
-  const [cart, setCart] = useState([]);
+  const { addToCart } = useContext(AppContext);
 
-  const handleClick = () => {
-    setCart([]);
+  const handleClick = item => {
+    addToCart(item);
   };
 
   return (
@@ -21,7 +22,7 @@ const ItemProduct = ({ product }) => {
         <h5 className="card-title"><p>{product.title}</p></h5>
             <p>${product.price}</p>
             <p className="datos-descripcion" >{product.description}</p>
-            <div onClick={handleClick} >
+            <div onClick={()=> handleClick(product)} >
             < ButtonComprar/>
             </div>
             

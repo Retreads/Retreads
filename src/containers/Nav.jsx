@@ -1,16 +1,23 @@
-import React , { useState }from "react";
+import React , { useState, useContext }from "react";
 import "../styles/global.css";
+import '../styles/Container.css'
 import { NavLink } from "react-router-dom";
-
+import MiCuenta from "./MiCuenta";
+import AppContext from "../context/AppContext";
 import lcarrito from "../asset/logocarrito.png";
 import logo from "../asset/logoicono.png";
 
 const Nav = () => {
-  
+  const [toggle, setToggle] = useState(false);
+  const { state } = useContext(AppContext);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  }
   return (
     <>
       <div className="navbar navbar-expand-lg  bg-primarys ">
-        <img src={logo} height="60px" alt="No encontrada" />
+        <img  src={logo} height="60px" alt="No encontrada" />
 
         <button
           type="button"
@@ -51,6 +58,7 @@ const Nav = () => {
           <div className="navbar-nav">
             <NavLink to="/login">
               <button
+                onMouseOver={handleToggle}
                 className="quitar-linea-inf btn btn-warning"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
@@ -58,15 +66,22 @@ const Nav = () => {
               >
                 INICIAR SESIÓN
               </button>
+              
             </NavLink>
           </div>
-          <div className="col-12 col-md-2 mt-2 mt-md-0 text-center">
+          <div className="col-12 col-md-2 mt-2 mt-md-0 text-center logo-mostrar-cart">
             <NavLink to="/carrito">
-              <img src={lcarrito} alt="" height="50px" />
+              <img src={lcarrito} alt="" height="50px" className="" />
+              
+                {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
+              
             </NavLink>
           </div>
+          {toggle && <MiCuenta/>}
         </div>
+        
       </div>
+      
     </>
   );
 };
