@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/Container.css";
 import { NavLink } from "react-router-dom";
-
 import BtnRecoger from "../components/BtnRecoger";
 import BtnEntregaDom from "../components/BtnEntregaDom";
 import BtnFinCompra from "../components/BtnFinCompra";
-import BtnContinue from "../components/BtnContinue";
+import ListCompras from "./ListCompras";
+import AppContext from "../context/AppContext";
+
 
 const Carrito = () => {
+  const {state} = useContext(AppContext)
+  const sumTotal = () => {
+		const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
+		const sum = state.cart.reduce(reducer, 0);
+		return sum;
+	}
   return (
     <>
       <div className="cont-carrito">
@@ -26,8 +33,10 @@ const Carrito = () => {
         </div>
 
         <div className="info-car">
-          <div className="int-info-car1">
-            <h4>Producto</h4>
+          
+          <div  className="int-info-car1">
+         
+            <h4>titulo</h4>
           </div>
           <div className="int-info-car1">
             <h4>Descripcion</h4>
@@ -36,32 +45,16 @@ const Carrito = () => {
             <h4>Precio</h4>
           </div>
           <div className="int-info-car1">
-            <h4>Cantidad</h4>
+            <h4>Producto</h4>
           </div>
-          <div className="int-info-car1">
-            <h4>Subtotal</h4>
-          </div>
+          
         </div>
+        {state.cart.map(product => (
+            <ListCompras product={product} key={`list-${product.id}`}/>
+          ))}
 
-
-        <div className="ver-dates">
-        <div className="int-info-car">
-            <p>Producto1</p>
-          </div>
-          <div className="int-info-car">
-            <p>lo traemos desde el backend</p>
-          </div>
-          <div className="int-info-car">
-            <p>como en el</p>
-          </div>
-          <div className="int-info-car">
-            <p>ciclo 3</p>
-          </div>
-          <div className="int-info-car">
-            <p>pero ahora con node</p>
-          </div>
-        </div>
-
+        
+          <p>${sumTotal()}</p>
         <div className="btn-cont alg2">
           <div className="recoger">
             <BtnFinCompra />

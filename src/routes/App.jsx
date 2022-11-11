@@ -16,6 +16,7 @@ import RecogeInTienda from "../containers/RecogeInTienda";
 import EntregaDomicilio from "../containers/EntregaDomicilio";
 import AppContext from "../context/AppContext.js"
 import useInitialState from "../hooks/useInitialState"
+import ListCompras from "../containers/ListCompras";
 
 import "../styles/global.css";
 
@@ -38,6 +39,7 @@ const App = () => {
           <Route exact path="/carrito" component={Carrito} />
           <Route exact path="/recoge-en-tienda" component={RecogeInTienda} />
           <Route exact path="/entregadomicilio" component={EntregaDomicilio} />
+          <Route exact path="/compras" component={ListCompras} />
           <Route path="*" component={NotFound} />
 
           

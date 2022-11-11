@@ -108,7 +108,7 @@
 .ver-dates {
   display: flex;
   width: 100%;
-  height: 60vh;
+  height: auto;
 }
 .int-info-car1 {
   display: flex;
@@ -121,7 +121,13 @@
 }
 .int-info-car {
   width: 100%;
-  padding: 0em 1em;
+  justify-content: center;
+  padding: 1em 1em;
+}
+.pCompra {
+  text-align: center;
+  position: relative;
+  right: 1px;
 }
 /* .int-info-car p{
     border-bottom: solid 1px;
