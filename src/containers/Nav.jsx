@@ -58,7 +58,7 @@ const Nav = () => {
           <div className="navbar-nav">
             <NavLink to="/login">
               <button
-                onMouseOver={handleToggle}
+                /* onMouseOver={handleToggle} */
                 className="quitar-linea-inf btn btn-warning"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
