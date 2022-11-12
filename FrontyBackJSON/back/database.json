@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Calentao Valluno",
+      "price": "15000",
+      "description": "Arroz, papa, chorizo,  maduro, carne desmechada.",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Calentao Cachaco",
+      "price": "8000",
+      "description": "Arroz, papa, Lenteja,  carne de cerdo en trozos,  tocineta, cebolla grille."
+    },
+    {
+      "name": "Calentao Paisa",
+      "price": "8500",
+      "description": "Arroz, papa, frijol, chorizo,  maduro, carne desmechada.",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Hamburguesa Clasica",
+      "price": "8000",
+      "description": "Una carne de 125g cada una 100% de res a la parrilla con salsa MIXTOS, una tajada de queso,lechuga picada, tomate,cebolla grille, papa ripio."
+    },
+    {
+      "id": "5",
+      "name": "Hamburguesa Todoterreno",
+      "price": "8000",
+      "description": "Dos carnes de 125g cada una 100% de res a la parrilla con salsa BBQ, tocineta, una tajada de queso,lechuga picada, tomate,cebolla grille, papa ripio, salsa MIXTOS."
+    },
+    {
+      "name": "Hamburguesa wrap de pollo o carne",
+      "price": "6000",
+      "description": "Wrap de 125g cada una 100% de res a la parrilla con salsa MIXTOS, una tajada de queso,lechuga picada, tomate,cebolla grille, papa ripio.",
+      "id": "6"
+    }
+  ]
+}
