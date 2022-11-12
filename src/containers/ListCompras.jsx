@@ -24,13 +24,13 @@ const ListCompras = (props) => {
       </div>
       <div className="int-info-car pCompra">
         <img
-        onClick={()=> handleRemove(indexValue)}
+        
           className="card-img-top img-cart"
           src={product.images[0]}
           alt={product.title}
         />
         <div>
-        <i  className="fa-solid fa-trash"></i>
+        <i onClick={()=> handleRemove(indexValue)} className="fa-solid fa-trash"></i>
         </div>
        
       </div>
