@@ -46,15 +46,11 @@ const Carrito = () => {
             <h4>Producto</h4>
           </div>
         </div>
-        {/*  {state.cart.map((product) => (
-          <ListCompras product={product} key={`list-${product.id}`} />
+        {/* {state.cart.map(product => (
+          <ListCompras product={product} key={`orderItem-${product.id}`} />
         ))} */}
         {state.cart.map((product, index) => (
-          <ListCompras
-            product={product}
-            key={`order-item-${index}`}
-            keyIndex={index}
-          />
+          <ListCompras indexValue={index} key={index} product={product} />
         ))}
         <p>${sumTotal()}</p>
         <div className="btn-cont alg2">

@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import AppContext from "../context/AppContext";
 import "../styles/Container.css";
 
-const ListCompras = ({ product, keyIndex}) => {
+const ListCompras = (props) => {
+  const { product, indexValue } = props
   const { removeProduct } = useContext(AppContext);
-  const handleRemove = () => {
-    removeProduct( keyIndex);
+  const handleRemove = (index )=> {
+    removeProduct( index);
   }
 
   return (
@@ -23,12 +24,15 @@ const ListCompras = ({ product, keyIndex}) => {
       </div>
       <div className="int-info-car pCompra">
         <img
-        onClick={()=> handleRemove(product)}
+        onClick={()=> handleRemove(indexValue)}
           className="card-img-top img-cart"
           src={product.images[0]}
           alt={product.title}
         />
-        <div><i onClick={()=> handleRemove(product)} className="fa-solid fa-trash"></i></div>
+        <div>
+        <i  className="fa-solid fa-trash"></i>
+        </div>
+       
       </div>
       
     </div>
