@@ -3,7 +3,9 @@ import '../styles/Container.css'
 import ItemProduct from '../components/ItemProduct';
 import useGetProducts from '../hooks/useGetProducts';
 
-const API = 'http://api.escuelajs.co/api/v1/products';
+const API = 'https://api.escuelajs.co/api/v1/products';
+/* const API = 'https://dummyjson.com/products'; */ 
+/* const API = 'https://data.mongodb-api.com/app/data-uhflx/endpoint/data/v1'; */
 /* const API = 'https://dummyjson.com/products'; */
 
 const SeccionBebidas = () => {
