@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "nodemon": "nodemon src/conexionExpress.js"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,11 @@
     "axios": "^1.1.3",
     "babel-loader": "^8.2.5",
     "bundle": "^2.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "mongoose": "^6.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
@@ -42,6 +46,7 @@
   "devDependencies": {
     "css-loader": "^6.7.1",
     "mini-css-extract-plugin": "^2.6.1",
+    "nodemon": "^2.0.20",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",

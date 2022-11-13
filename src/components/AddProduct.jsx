@@ -1,7 +1,51 @@
 import React from 'react';
 import {react, useState } from 'react';
 const AddProduct = () => {
-    const [counter, setCounter] = useState(0)
+ return (
+  <div className="row">
+                <div className="col-md-4">
+                    <div className="card card-body">
+                        <h3> CRUD de Productos </h3>
+                        <form /* onSubmit={this.onSubmit} */>
+                            <div className="form-group">
+                                <div className="container p-2">
+                                <h6> Nombre: </h6>
+                                <input type="text" className="form control" /* value={this.state.name} onChange={this.onChangeName} *//>
+                                </div>
+                                <h6> Precio: </h6>
+                                <div className="container p-2">
+                                <input type="text" className="form control" /* value={this.state._price} onChange={this.onChangePrice} *//>
+                                </div>
+                                <h6> Descripción: </h6>
+                                <div className="container p-2">
+                                <input type="text" className="form control" /* value={this.state._description} */ /* onChange={this.onChangeDescription} *//>
+                                </div>
+                            </div>
+                            <div className="container p-4">
+                            <button type="submit" className="btn btn-primary">
+                                GUARDAR
+                            </button>
+                            <div className="container p-2">
+                            <button type="reset" className="btn btn-primary" /* onClick={()=>this.onClean()} */>
+                                LIMPIAR
+                            </button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                
+                <div className="col-md-8">
+                    <ul className="list-group">
+                        hola
+                    </ul>
+                </div>
+            </div>
+        )
+}
+    /* const [counter, setCounter] = useState(0)
 
     const handleClick1 = () => {
         // contador incrementa
@@ -40,6 +84,6 @@ const AddProduct = () => {
           </div>
         )
         
-      }
+      } */
 
 export default AddProduct;
