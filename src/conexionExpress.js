@@ -1,12 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const userRoutes = require("./back/product/producto");
+const userRoutes = require("./back/productRoutes/producto");
 require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 9000;
 
 //midelware
+const bodyParser = require("body-parser")
+
 app.use(express.json())
+app.use(bodyParser.json());
 app.use("/api", userRoutes);
 //rutas
 app.get("/", (req, res) => {
