@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import ('../styles/addproduct.css')
+import("../styles/addproduct.css");
 
 export default class AddProduct extends Component {
   state = {
@@ -10,6 +10,7 @@ export default class AddProduct extends Component {
     _id: "",
     price: "",
     description: "",
+    images: []
   };
 
   async componentDidMount() {
@@ -31,6 +32,11 @@ export default class AddProduct extends Component {
     this.setState({ title: e.target.value });
   };
 
+  onChangeImages = (e) => {
+    //console.log(e.target.value)
+    this.setState({ images: e.target.value });
+  };
+
   onChangePrice = (e) => {
     //console.log(e.target.value)
     this.setState({ price: e.target.value });
@@ -43,9 +49,11 @@ export default class AddProduct extends Component {
 
   onClean = () => {
     this.setState({
+      _id: "",
       title: "",
       price: "",
       description: "",
+      images : [],
       editar: false,
     });
   };
@@ -57,19 +65,20 @@ export default class AddProduct extends Component {
         title: this.state.title,
         price: this.state.price,
         description: this.state.description,
+        images : this.state.images[0]
       });
-      
     } else {
       await axios.post("http://localhost:9000/api/producto", {
         title: this.state.title,
         price: this.state.price,
         description: this.state.description,
+        images : this.state.images[0]
       });
     }
     this.getProductos();
     this.onClean();
-    console.log(this.state.editar);
-    /* console.log() */
+    /*  console.log(this.state.editar);
+    console.log('post') */
   };
 
   deleteUser = async (id) => {
@@ -77,8 +86,8 @@ export default class AddProduct extends Component {
     await axios.delete("http://localhost:9000/api/producto/" + id);
     this.getProductos();
   };
-  
-  cargarDatosProducto = async (id, title, price, description) => {
+
+  cargarDatosProducto = async (id, title, price, description, images) => {
     //console.log(id+'-'+name+'-'+price+'-'+description);
     this.setState({
       _id: id,
@@ -86,6 +95,7 @@ export default class AddProduct extends Component {
       price: price,
       description: description,
       editar: true,
+      images: [0]
     });
     console.log(this.state.editar);
   };
@@ -101,6 +111,7 @@ export default class AddProduct extends Component {
                 <div className="container p-2">
                   <h6> Nombre: </h6>
                   <input
+                    name="title"
                     type="text"
                     className="form control"
                     value={this.state.title}
@@ -110,6 +121,7 @@ export default class AddProduct extends Component {
                 <h6>&nbsp;&nbsp;Precio: </h6>
                 <div className="container p-2">
                   <input
+                    name="price"
                     type="text"
                     className="form control"
                     value={this.state.price}
@@ -119,7 +131,7 @@ export default class AddProduct extends Component {
                 <h6>&nbsp;&nbsp;Descripción: </h6>
                 <div className="container p-2">
                   <textarea
-                    name="texto"
+                    name="description"
                     rows="4"
                     cols="20"
                     className="form control"
@@ -127,19 +139,25 @@ export default class AddProduct extends Component {
                     onChange={this.onChangeDescription}
                   />
                 </div>
+                <h6>&nbsp;&nbsp;Imagen: </h6>
+                <div className="container p-2">
+                  <input
+                    name="images"
+                    rows="4"
+                    cols="20"
+                    className="form control"
+                    value={this.state.images[0]}
+                    onChange={this.onChangeImages}
+                  />
+                </div>
               </div>
               <div className="container p-4">
-                {/* <button type="submit" className="btn btn-primarys">
-                                    GUARDAR
-                                </button> */}
                 <button className="btn btn-primarys1" type="submit">
-                
                   GUARDAR
                 </button>
-
-                {/* <button type="submit" className="btn btn-primary" onClick={() => this.onSubmit()}>
-                                        esditar
-                                    </button> */}
+                {/* <button className="btn btn-primarys1" onClick={()=> this.onSubmit()}>
+                  editar
+                </button> */}
 
                 <button
                   className="btn btn-primarys2"
@@ -164,14 +182,18 @@ export default class AddProduct extends Component {
                     producto.id,
                     producto.title,
                     producto.price,
-                    producto.description
+                    producto.description,
+                    producto.images[0]
                   )
                 }
               >
+                {producto._id}
                 {producto.title}
+                {producto.price}
+                {producto.description}
+                {producto.images[0]}
                 <i
                   className="fa-solid fa-trash"
-                  
                   onClick={() => this.deleteUser(producto._id)}
                 ></i>
               </li>

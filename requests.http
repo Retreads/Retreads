@@ -21,10 +21,10 @@ Content-Type: application/json
 
 {
     
-    "title": "hhhhhamburguesa",
+    "title": "hhhhhamburguesss",
     "price": 1000,
     "description": "desde local a db ejemplo 2",
-    
+    "images": ["https://api.lorem.space/image/burger?w=150&h=150"]
   }
 
 ###
