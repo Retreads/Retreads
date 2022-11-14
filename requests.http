@@ -16,18 +16,15 @@ Content-Type: application/json
 }
 ###
 
-PUT http://localhost:9000/api/producto/63714aa679f76a5aae43d937 HTTP/1.1
+PUT http://localhost:9000/api/producto/6372812f058dbccb8f54b9d8 HTTP/1.1
 Content-Type: application/json
 
 {
     
-    "title": "ppppproducto12",
+    "title": "hhhhhamburguesa",
     "price": 1000,
     "description": "desde local a db ejemplo 2",
-    "images": [
-      "https://api.lorem.space/image/burger?w=150&h=150"
-    ],
-    "__v": 0
+    
   }
 
 ###
