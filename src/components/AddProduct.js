@@ -147,7 +147,7 @@ export default class AddProduct extends Component {
                             this.state.productos.map((producto) => (
                                 <li
                                     className="list-group-item list-group-item-action"
-                                    key={producto.id} producto={producto}
+                                    key={producto} producto={producto.id}
                                     onDoubleClick={() => this.deleteUser(producto.id)}
                                     onClick={() => this.cargarDatosProducto(producto.id, producto.title, producto.price, producto.description)}>
                                     {producto.title}
