@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 export default class AddProduct extends Component {
+    
     state = {
         productos: [],
         title: '',
@@ -35,7 +36,7 @@ export default class AddProduct extends Component {
 
     onChangeDescription = (e) => {
         //console.log(e.target.value)
-        this.setState({ _description: e.target.value });
+        this.setState({ description: e.target.value });
     }
 
     onClean = () => {
@@ -60,7 +61,7 @@ export default class AddProduct extends Component {
             await axios.post('http://localhost:9000/api/producto', {
                 title: this.state.title,
                 price: this.state.price,
-                description: this.state._description
+                description: this.state.description
             });
         }
         this.getProductos();
@@ -75,13 +76,13 @@ export default class AddProduct extends Component {
         this.getProductos();
     }
 
-    cargarDatosProducto = async (id, name, price, description) => {
+    cargarDatosProducto = async (id, title, price, description) => {
         //console.log(id+'-'+name+'-'+price+'-'+description);
         this.setState({
             _id: id,
-            name: name,
-            _price: price,
-            _description: description,
+            title: title,
+            price: price,
+            description: description,
             editar: true
         });
         console.log(this.state._id);
@@ -97,15 +98,15 @@ export default class AddProduct extends Component {
                             <div className="form-group">
                                 <div className="container p-2">
                                     <h6> Nombre: </h6>
-                                    <input type="text" className="form control" value={this.state.name} onChange={this.onChangeName} />
+                                    <input type="text" className="form control" value={this.state.title} onChange={this.onChangeName} />
                                 </div>
                                 <h6>&nbsp;&nbsp;Precio: </h6>
                                 <div className="container p-2">
-                                    <input type="text" className="form control" value={this.state._price} onChange={this.onChangePrice} />
+                                    <input type="text" className="form control" value={this.state.price} onChange={this.onChangePrice} />
                                 </div>
                                 <h6>&nbsp;&nbsp;Descripción: </h6>
                                 <div className="container p-2">
-                                    <textarea name="texto" rows="4" cols="20" className="form control" value={this.state._description} onChange={this.onChangeDescription} />
+                                    <textarea name="texto" rows="4" cols="20" className="form control" value={this.state.description} onChange={this.onChangeDescription} />
                                 </div>
                             </div>
                             <div className="container p-4" >
@@ -143,10 +144,10 @@ export default class AddProduct extends Component {
                 <div className="col-md-8">
                     <ul className="list-group">
                         {
-                            this.state.productos.map(producto => (
+                            this.state.productos.map((producto) => (
                                 <li
                                     className="list-group-item list-group-item-action"
-                                    producto={producto} key={producto.id}
+                                    key={producto.id} producto={producto}
                                     onDoubleClick={() => this.deleteUser(producto.id)}
                                     onClick={() => this.cargarDatosProducto(producto.id, producto.title, producto.price, producto.description)}>
                                     {producto.title}
