@@ -6,10 +6,15 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 //midelware
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
 
-app.use(express.json())
+app.use(express.json());
 app.use(bodyParser.json());
+
+const cors = require("cors");
+app.use(cors({ origin: "*" }));
+
+app.use(bodyParser.urlencoded({ extended: "true" }));
 app.use("/api", userRoutes);
 //rutas
 app.get("/", (req, res) => {
