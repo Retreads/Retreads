@@ -13,10 +13,10 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  images: {
-    type : Array,
-    required : true,
+  images: [{
+    type:String
   }
+  ]
 });
 
 module.exports = mongoose.model("Product", productSchema);

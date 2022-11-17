@@ -10,7 +10,7 @@ export default class AddProduct extends Component {
     _id: "",
     price: "",
     description: "",
-    images: []
+    images: "",
   };
 
   async componentDidMount() {
@@ -18,7 +18,7 @@ export default class AddProduct extends Component {
     //console.log(rest);
     //console.log(this.state.productos);
   }
-
+  /* https://api.escuelajs.co/api/v1/products */
   getProductos = async () => {
     const rest = await axios.get("http://localhost:9000/api/producto", {
       "Access-Control-Allow-Origin": "*",
@@ -26,7 +26,10 @@ export default class AddProduct extends Component {
     this.setState({ productos: rest.data });
     console.log(rest);
   };
-
+  onChangeId= (e) => {
+    //console.log(e.target.value)
+    this.setState({ title: e.target.value });
+  };
   onChangeName = (e) => {
     //console.log(e.target.value)
     this.setState({ title: e.target.value });
@@ -53,7 +56,7 @@ export default class AddProduct extends Component {
       title: "",
       price: "",
       description: "",
-      images : [],
+      images: "",
       editar: false,
     });
   };
@@ -65,14 +68,14 @@ export default class AddProduct extends Component {
         title: this.state.title,
         price: this.state.price,
         description: this.state.description,
-        images : this.state.images[0]
+        images: this.state.images,
       });
     } else {
       await axios.post("http://localhost:9000/api/producto", {
         title: this.state.title,
         price: this.state.price,
         description: this.state.description,
-        images : this.state.images[0]
+        images: this.state.images,
       });
     }
     this.getProductos();
@@ -95,7 +98,7 @@ export default class AddProduct extends Component {
       price: price,
       description: description,
       editar: true,
-      images: [0]
+      images: images,
     });
     console.log(this.state.editar);
   };
@@ -108,6 +111,16 @@ export default class AddProduct extends Component {
             <h3> CRUD de Productos </h3>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
+              <div className="container p-2">
+                  <h6>id: </h6>
+                  <input
+                    name="_id"
+                    type="id"
+                    className="form control"
+                    value={this.state._id}
+                    onChange={this.onChangeId}
+                  />
+                </div>
                 <div className="container p-2">
                   <h6> Nombre: </h6>
                   <input
@@ -146,7 +159,7 @@ export default class AddProduct extends Component {
                     rows="4"
                     cols="20"
                     className="form control"
-                    value={this.state.images[0]}
+                    value={this.state.images}
                     onChange={this.onChangeImages}
                   />
                 </div>
@@ -155,9 +168,7 @@ export default class AddProduct extends Component {
                 <button className="btn btn-primarys1" type="submit">
                   GUARDAR
                 </button>
-                {/* <button className="btn btn-primarys1" onClick={()=> this.onSubmit()}>
-                  editar
-                </button> */}
+                
 
                 <button
                   className="btn btn-primarys2"
@@ -191,7 +202,8 @@ export default class AddProduct extends Component {
                 {producto.title}
                 {producto.price}
                 {producto.description}
-                {producto.images[0]}
+                <img src={producto.images[0]} width="80px"/>
+                
                 <i
                   className="fa-solid fa-trash"
                   onClick={() => this.deleteUser(producto._id)}
