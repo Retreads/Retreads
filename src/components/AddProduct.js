@@ -214,6 +214,7 @@ export default class AddProduct extends Component {
           </ul>
         </div>
       </div>
+
     );
   }
 }
