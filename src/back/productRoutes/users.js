@@ -3,7 +3,7 @@ const userSchema = require("../models/user");
 
 const router = express.Router();
 
-
+//crear usuario
 router.post("/user", (req, res) => {
   const user = userSchema(req.body);
   user
@@ -12,6 +12,45 @@ router.post("/user", (req, res) => {
     .catch((error) => res.json({ message: error }));
 });
 
+
+//mostrar todos los usuario
+router.get("/user", (req, res) => {
+  userSchema
+    .find()
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+});
+
+
+//mostrar por el id
+router.get("/user/:id", (req, res) => {
+  const { id } = req.params;
+  userSchema
+    .findById(id)
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+});
+
+
+//actualizar producto por id
+router.put("/producto/:id", (req, res) => {
+  const {id} = req.params;
+  const { email, name, password, images} = req.body;
+  userSchema
+    .updateOne({ _id: id}, { $set: {email, name, password, images }})
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+    console.log({id})
+});
+
+//eliminar usuario
+router.delete("/user/:id", (req, res) => {
+  const {id} = req.params;
+  userSchema
+    .remove({_id : id})
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+});
 
 /* crear usuario */
 /* router.post("/", (req, res) => {

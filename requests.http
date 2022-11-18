@@ -4,8 +4,24 @@ Content-Type: application/json
 
 {
       
-        "name": "Dylan",
+        "name": "nuevo1",
         "password": "hghghg",
         "email": "emaildeexample@example"
        
   }
+###
+  GET http://localhost:9000/api/user/63779d1a3a74385cade928c3 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT  http://localhost:9000/api/user/63779d1a3a74385cade928c3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "eeditado",
+    "name": "editando el nuevo",
+    "password": "hghghg"
+}
+
+###
