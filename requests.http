@@ -1,0 +1,32 @@
+###
+GET  http://localhost:9000/api/producto HTTP/1.1
+
+###
+
+GET  http://localhost:9000/api/producto/6376faeb9392e5bd35bd7ea4 HTTP/1.1
+###
+POST http://localhost:9000/api/producto HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "producto de prueba 5",
+    "price" : 5000,
+    "description" : "desde local a db ejemplo 3",
+    "images": ["https://cedritos.perrosjyr.com/wp-content/uploads/2021/11/PERRO-TRADICIONAL-scaled-1.jpg"]
+}
+###
+
+PUT http://localhost:9000/api/producto/6376fc569392e5bd35bd7eaf HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "title": "hhhhhamburguesss",
+    "price": 1000,
+    "description": "desde local a db ejemplo 2",
+    "images": ["https://api.lorem.space/image/burger?w=150&h=150"]
+  }
+
+###
+DELETE http://localhost:9000/api/producto/63762f1eb62608a3b8d1bcf6 HTTP/1.1
+Content-Type: application/json

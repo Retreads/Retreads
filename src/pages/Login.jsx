@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, NavLink } from "react";
 import "../styles/global.css";
 import Nav from "../containers/Nav";
 import Footer from "../containers/Footer";
@@ -28,7 +28,7 @@ const Login = () => {
           </h1>
           <p className="subtitle">Bienvenido a la consola de administracion</p>
 
-          <form action="/login" className="form" ref={form}>
+          <form action="/product" className="form" ref={form}>
             <label htmlFor="email" className="label">
               Usuario
             </label>
@@ -50,11 +50,14 @@ const Login = () => {
             />
 
             <button
-              onClick={handleSubmit}
+              /* onClick={handleSubmit} */
               className="primary-button login-button"
+              
             >
               Ingresarlo
             </button>
+
+            
           </form>
         </div>
       </div>

@@ -13,9 +13,18 @@ const useInitialState = () => {
       cart: [...state.cart, payload],
     });
   };
+
+  const removeProduct = (indexValue) => {
+    setState({
+      ...state,
+      cart: state.cart.filter((products,index) => index !== indexValue),
+    });
+  }; 
+  
   return {
     state,
     addToCart,
+    removeProduct
   };
 };
 export default useInitialState;
