@@ -106,7 +106,7 @@ export default class AddProduct extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div className="row container-sm justify-content-center add-product">
         <div className="col-md-4">
           <div className="card card-body">
             <h3> CRUD de Productos </h3>
@@ -182,7 +182,7 @@ export default class AddProduct extends Component {
             </form>
           </div>
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 container-fluid">
           <ul className="list-group">
             {this.state.productos.map((producto) => (
               <li
@@ -199,10 +199,10 @@ export default class AddProduct extends Component {
                   )
                 }
               >
-                {producto._id}
+                
                 {producto.title}
                 {producto.price}
-                {producto.description}
+                
                 <img src={producto.images[0]} width="80px"/>
                 
                 <i

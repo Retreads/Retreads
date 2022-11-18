@@ -52,16 +52,17 @@ const Carrito = () => {
         {state.cart.map((product, index) => (
           <ListCompras indexValue={index} key={index} product={product} />
         ))}
-        <p>${sumTotal()}</p>
+        <p className="total-unidades btn btn-outline-dark"><span>Total</span> $ {sumTotal()}</p>
         <div className="btn-cont alg2">
-          <div className="recoger">
-            <BtnFinCompra />
-          </div>
-          <div>
+        <div>
             <NavLink className="inter-recoger" to="/">
               Seguir Comprando
             </NavLink>
           </div>
+          <div className="recoger">
+            <BtnFinCompra />
+          </div>
+          
         </div>
       </div>
     </>
