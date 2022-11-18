@@ -11,7 +11,7 @@ const SeccionBebidas = () => {
   return (
     <div className="cont-calentado cont-bebidas">
       <div>
-        <h4>Bebidas</h4>
+        <h4>Productos</h4>
       </div>
       <div className="item-calentado">
         {products.map((product) => (
