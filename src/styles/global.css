@@ -144,6 +144,9 @@ body {
 .navbar {
   padding: 0px 3em;
 }
+.navbar h5 {
+  /* color: var(--white); */
+}
 .navbar-collapse a {
   color: white;
 }

@@ -28,7 +28,7 @@ export default class AddProduct extends Component {
   };
   onChangeId= (e) => {
     //console.log(e.target.value)
-    this.setState({ title: e.target.value });
+    this.setState({ _id: e.target.value });
   };
   onChangeName = (e) => {
     //console.log(e.target.value)
@@ -65,6 +65,7 @@ export default class AddProduct extends Component {
     e.preventDefault();
     if (this.state.editar) {
       await axios.put("http://localhost:9000/api/producto/" + this.state._id, {
+        id : this.state.id,
         title: this.state.title,
         price: this.state.price,
         description: this.state.description,
@@ -190,7 +191,7 @@ export default class AddProduct extends Component {
                 producto={producto}
                 onClick={() =>
                   this.cargarDatosProducto(
-                    producto.id,
+                    producto._id,
                     producto.title,
                     producto.price,
                     producto.description,

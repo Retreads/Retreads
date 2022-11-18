@@ -11,7 +11,7 @@ const Admin1 = () => {
         
             <div className="logo-edit">
             <div>
-            <i class="fa-regular fa-pen-to-square"></i>
+            <i className="fa-regular fa-pen-to-square"></i>
                 <i class="fa-solid fa-plus"></i>
             </div>
 
