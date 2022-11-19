@@ -2,6 +2,7 @@ import React, { useRef, NavLink } from "react";
 import "../styles/global.css";
 import Nav from "../containers/Nav";
 import Footer from "../containers/Footer";
+import AddProduct from "../components/AddProduct";
 
 const Login = () => {
   const form = useRef(null);
@@ -12,8 +13,8 @@ const Login = () => {
     const data = {
       username: formData.get("email"),
       password: formData.get("password"),
-    }
-    console.log(data)
+    };
+    console.log(data);
   };
 
   return (
@@ -48,16 +49,12 @@ const Login = () => {
               placeholder="Escribe tu contraseña"
               className="input input"
             />
-
             <button
-              /* onClick={handleSubmit} */
-              className="primary-button login-button"
-              
-            >
-              Ingresarlo
-            </button>
-
-            
+                /* onClick={handleSubmit} */
+                className="primary-button login-button"
+              >
+                Ingresarlo
+              </button>
           </form>
         </div>
       </div>

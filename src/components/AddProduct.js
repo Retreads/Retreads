@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import("../styles/addproduct.css");
+import ('../styles/Container.css')
 
 export default class AddProduct extends Component {
   state = {
@@ -162,7 +163,7 @@ export default class AddProduct extends Component {
                     name="images"
                     rows="4"
                     cols="20"
-                    placeholder="escribe una URL de una imagen"
+                    placeholder="escribe o pega  una URL"
                     className="form control"
                     value={this.state.images}
                     onChange={this.onChangeImages}
@@ -187,10 +188,10 @@ export default class AddProduct extends Component {
           </div>
         </div>
         <div className="col-md-8 container">
-          <div className="card-body">
+          <div className="ver-dates card-body">
             {this.state.productos.map((producto) => (
-              <li
-                className="list-group-item list-group-item-action"
+              <div
+                className="ver-dates"
                 key={`k ${producto._id}`}
                 producto={producto}
                 onClick={() =>
@@ -203,17 +204,23 @@ export default class AddProduct extends Component {
                   )
                 }
               >
+                <div className="int-info-car">
+        <p>{producto.title}</p>
+        
+      </div>
+      <div className="int-info-car">
+        <p>{producto.price}</p>
+        
+      </div>
                 
-                {producto.title}
-                {producto.price}
                 
                 <img src={producto.images[0]} width="80px"/>
                 
                 <i
-                  className="fa-solid fa-trash"
+                  className="fa-solid icon-delet fa-trash"
                   onClick={() => this.deleteUser(producto._id)}
                 ></i>
-              </li>
+              </div>
             ))}
           </div>
         </div>

@@ -3,18 +3,16 @@ import AppContext from "../context/AppContext";
 import "../styles/Container.css";
 
 const ListCompras = (props) => {
-  const { product, indexValue } = props
+  const { product, indexValue } = props;
   const { removeProduct } = useContext(AppContext);
-  const handleRemove = (index )=> {
-    removeProduct( index);
-  }
+  const handleRemove = (index) => {
+    removeProduct(index);
+  };
 
   return (
     <div className="ver-dates">
-      
       <div className="int-info-car">
         <p>{product.title}</p>
-        
       </div>
       <div className="int-info-car">
         <p>{product.description}</p>
@@ -24,17 +22,17 @@ const ListCompras = (props) => {
       </div>
       <div className="int-info-car pCompra">
         <img
-        
           className="card-img-top img-cart"
           src={product.images[0]}
           alt={product.title}
         />
         <div>
-        <i onClick={()=> handleRemove(indexValue)} className="fa-solid fa-trash"></i>
+          <i
+            onClick={() => handleRemove(indexValue)}
+            className="fa-solid fa-trash icon-delet"
+          ></i>
         </div>
-       
       </div>
-      
     </div>
   );
 };
