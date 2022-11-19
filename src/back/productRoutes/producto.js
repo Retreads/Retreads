@@ -1,10 +1,17 @@
 const express = require("express");
 const productSchema = require("../models/Producto");
+const jwt = require('jsonwebtoken');
 
 const router = express.Router();
 
 //crear producto
 router.post("/producto", (req, res) => {
+
+  const id = req.body.id;
+  const name = req.body.name;
+  const password = req.body.password;
+  jwt.sign(id, )
+
   const product = productSchema(req.body);
   product
     .save()

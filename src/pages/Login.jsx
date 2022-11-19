@@ -17,13 +17,17 @@ const Login = () => {
       name: formData.get("name"),
       password: formData.get("password"),
     };
+    if(data.email.length <= 7 || data.name.length <= 7 || data.password.length <= 5 ){
+      alert("Please ingrese datos ")
+    } else {
+      alert(`creado con exito el usuario ${data.name}`);
     axios.post("http://localhost:9000/api/user", {
       email: data.email,
       name: data.name,
       password: data.password,
-    });
-
-    alert(`creado con exito el usuario ${data.name}`);
+    });}
+    console.log(data);
+    
   };
 
   return (
@@ -39,7 +43,7 @@ const Login = () => {
           </h1>
           <p className="subtitle">Bienvenido a la consola de administracion</p>
 
-          <form className="form" ref={form}>
+          <form className="form" action="/product" ref={form}>
             <label htmlFor="email" className="label">
               Email
             </label>
@@ -55,7 +59,7 @@ const Login = () => {
             <input
               type="text"
               name="name"
-              placeholder="Usuario"
+              placeholder="Ingrese minimo 7 caracteres"
               className="input input"
             />
 
@@ -65,7 +69,7 @@ const Login = () => {
             <input
               type="password"
               name="password"
-              placeholder="Escribe tu contraseña"
+              placeholder="Ingrese minimo 5 caracteres    "
               className="input input"
             />
             <button className="primary-button login-button">Ingresar</button>
