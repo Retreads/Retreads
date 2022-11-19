@@ -24,11 +24,18 @@ body {
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
+.form-container h1 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .title {
   font-size: 1.4em;
   margin-bottom: 12px;
   text-align: center;
 }
+
 .subtitle {
   color: var(--very-light-pink);
   font-size: var(--md);

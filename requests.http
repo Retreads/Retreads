@@ -1,16 +1,15 @@
 ###
 POST http://localhost:9000/api/user HTTP/1.1
 Content-Type: application/json
-{
-      
-        "name": "nuevo1",
-        "password": "hghghg",
-        "email": "emaildeexample@example"
-       
-  }
+
+{      
+        "name": "nestor2",
+        "password": "1234",
+        "email": "emaildeexample@exampddle"
+        }
 
 ###
-  GET http://localhost:9000/api/user/63779d1a3a74385cade928c3 HTTP/1.1
+  GET http://localhost:9000/api/user/ HTTP/1.1
 Content-Type: application/json
 
 
@@ -26,6 +25,6 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:9000/api/user/63779f06f5fab1fde6fefb56 HTTP/1.1
+DELETE http://localhost:9000/api/user/63779d82a13e35f4ab621633 HTTP/1.1
 Content-Type: application/json
 
