@@ -112,7 +112,7 @@ export default class AddProduct extends Component {
             <h3> CRUD de Productos </h3>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
-              <div className="container p-2">
+              {/* <div className="container p-2">
                   <h6>id: </h6>
                   <input
                     name="_id"
@@ -121,12 +121,13 @@ export default class AddProduct extends Component {
                     value={this.state._id}
                     onChange={this.onChangeId}
                   />
-                </div>
+                </div> */}
                 <div className="container p-2">
-                  <h6> Nombre: </h6>
+                  <h6> Nombre producto: </h6>
                   <input
                     name="title"
                     type="text"
+                    placeholder="escribe el nombre del producto"
                     className="form control"
                     value={this.state.title}
                     onChange={this.onChangeName}
@@ -137,6 +138,7 @@ export default class AddProduct extends Component {
                   <input
                     name="price"
                     type="text"
+                    placeholder="no uses comas ni puntos"
                     className="form control"
                     value={this.state.price}
                     onChange={this.onChangePrice}
@@ -148,6 +150,7 @@ export default class AddProduct extends Component {
                     name="description"
                     rows="4"
                     cols="20"
+                    placeholder="escribe por favor una breve descripcion de tu producto"
                     className="form control"
                     value={this.state.description}
                     onChange={this.onChangeDescription}
@@ -159,6 +162,7 @@ export default class AddProduct extends Component {
                     name="images"
                     rows="4"
                     cols="20"
+                    placeholder="escribe una URL de una imagen"
                     className="form control"
                     value={this.state.images}
                     onChange={this.onChangeImages}
@@ -182,8 +186,8 @@ export default class AddProduct extends Component {
             </form>
           </div>
         </div>
-        <div className="col-md-8 container-fluid">
-          <ul className="list-group">
+        <div className="col-md-8 container">
+          <div className="card-body">
             {this.state.productos.map((producto) => (
               <li
                 className="list-group-item list-group-item-action"
@@ -211,7 +215,7 @@ export default class AddProduct extends Component {
                 ></i>
               </li>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
 
