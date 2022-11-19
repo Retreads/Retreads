@@ -1,4 +1,5 @@
-import React, { useRef, NavLink } from "react";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import "../styles/global.css";
 import Nav from "../containers/Nav";
 import Footer from "../containers/Footer";
@@ -19,7 +20,8 @@ const Login = () => {
 
   return (
     <>
-      <Nav />
+      <Nav  />
+     
       <div className="login">
         <div className="form-container">
           {/* {<img src={logo} alt="" />} */}
@@ -53,9 +55,17 @@ const Login = () => {
                 /* onClick={handleSubmit} */
                 className="primary-button login-button"
               >
-                Ingresarlo
+                Ingresar
               </button>
+
+              <Link to="/home"
+              className="btn btn-light"> Crear usuario
+          </Link>
+          
+              
+              
           </form>
+          
         </div>
       </div>
       <Footer />
