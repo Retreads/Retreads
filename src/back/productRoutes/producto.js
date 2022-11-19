@@ -7,10 +7,7 @@ const router = express.Router();
 //crear producto
 router.post("/producto", (req, res) => {
 
-  const id = req.body.id;
-  const name = req.body.name;
-  const password = req.body.password;
-  jwt.sign(id, )
+  
 
   const product = productSchema(req.body);
   product
