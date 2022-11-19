@@ -37,4 +37,8 @@
 
 .add-product {
     margin:auto;
+    padding: 2em 0em;
+}
+.img-prod-view {
+    padding: 6px 1px;
 }

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 import("../styles/addproduct.css");
-import ('../styles/Container.css')
+import ('../styles/Container.css');
+import Footer from "../containers/Footer";
+import Nav from "../containers/Nav";
 
 export default class AddProduct extends Component {
   state = {
@@ -107,7 +109,10 @@ export default class AddProduct extends Component {
 
   render() {
     return (
+      <>
+      <Nav/>
       <div className="row container-sm justify-content-center add-product">
+        
         <div className="col-md-4">
           <div className="card card-body">
             <h3> CRUD de Productos </h3>
@@ -209,12 +214,12 @@ export default class AddProduct extends Component {
         
       </div>
       <div className="int-info-car">
-        <p>{producto.price}</p>
+        <p >$ {producto.price}</p>
         
       </div>
                 
                 
-                <img src={producto.images[0]} width="80px"/>
+                <img className="img-prod-view" src={producto.images[0]} width="80px"/>
                 
                 <i
                   className="fa-solid icon-delet fa-trash"
@@ -224,8 +229,11 @@ export default class AddProduct extends Component {
             ))}
           </div>
         </div>
+        
       </div>
-
+      <Footer/>
+      </>
     );
+    
   }
 }
