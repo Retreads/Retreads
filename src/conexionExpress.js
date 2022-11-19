@@ -29,3 +29,7 @@ mongoose
   .then(() => console.log("conexion a mongo exitosa"))
   .catch((error) => console.error(error));
 app.listen(port, () => console.log("escuchando por el puerto", port));
+
+
+
+

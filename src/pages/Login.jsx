@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/global.css";
 import Nav from "../containers/Nav";
 import Footer from "../containers/Footer";
+import axios from "axios";
 import AddProduct from "../components/AddProduct";
 
 const Login = () => {
@@ -12,16 +13,23 @@ const Login = () => {
     event.preventDefault();
     const formData = new FormData(form.current);
     const data = {
-      username: formData.get("email"),
+      email: formData.get("email"),
+      name: formData.get("name"),
       password: formData.get("password"),
     };
-    console.log(data);
+    axios.post("http://localhost:9000/api/user", {
+      email: data.email,
+      name: data.name,
+      password: data.password,
+    });
+
+    alert(`creado con exito el usuario ${data.name}`);
   };
 
   return (
     <>
-      <Nav  />
-     
+      <Nav />
+
       <div className="login">
         <div className="form-container">
           {/* {<img src={logo} alt="" />} */}
@@ -31,13 +39,22 @@ const Login = () => {
           </h1>
           <p className="subtitle">Bienvenido a la consola de administracion</p>
 
-          <form action="/product" className="form" ref={form}>
+          <form className="form" ref={form}>
             <label htmlFor="email" className="label">
-              Usuario
+              Email
             </label>
             <input
               type="text"
               name="email"
+              placeholder="escribe tu email"
+              className="input input"
+            />
+            <label htmlFor="name" className="label">
+              Usuario
+            </label>
+            <input
+              type="text"
+              name="name"
               placeholder="Usuario"
               className="input input"
             />
@@ -51,21 +68,18 @@ const Login = () => {
               placeholder="Escribe tu contraseña"
               className="input input"
             />
-            <button
-                /* onClick={handleSubmit} */
-                className="primary-button login-button"
-              >
-                Ingresar
-              </button>
+            <button className="primary-button login-button">Ingresar</button>
 
-              <Link to="/home"
-              className="btn btn-light"> Crear usuario
-          </Link>
-          
-              
-              
+            <Link
+              to="/home"
+              type="reset"
+              onClick={handleSubmit}
+              className="btn btn-light"
+            >
+              {" "}
+              Crear usuario
+            </Link>
           </form>
-          
         </div>
       </div>
       <Footer />
