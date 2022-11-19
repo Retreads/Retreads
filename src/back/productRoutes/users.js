@@ -33,7 +33,7 @@ router.get("/user/:id", (req, res) => {
 
 
 //actualizar producto por id
-router.put("/producto/:id", (req, res) => {
+router.put("/user/:id", (req, res) => {
   const {id} = req.params;
   const { email, name, password, images} = req.body;
   userSchema
