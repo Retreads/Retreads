@@ -19,7 +19,7 @@ import useInitialState from "../hooks/useInitialState"
 import ListCompras from "../containers/ListCompras";
 import AddProduct from "../components/AddProduct";
 
-import { providerAuth } from "../hooks/useAuth";
+
 
 import "../styles/global.css";
 
